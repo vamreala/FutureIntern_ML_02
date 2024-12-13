@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Iris Species</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Enter Features to Predict Iris Species</h2>
+    
+    <form method="POST" action="/predict">
+        <label for="sepal_length">Sepal Length (cm):</label>
+        <input type="text" name="sepal_length" required><br><br>
+        <label for="sepal_width">Sepal Width (cm):</label>
+        <input type="text" name="sepal_width" required><br><br>
+        <label for="petal_length">Petal Length (cm):</label>
+        <input type="text" name="petal_length" required><br><br>
+        <label for="petal_width">Petal Width (cm):</label>
+        <input type="text" name="petal_width" required><br><br>
+
+        <p> 0 - Iris-Setosa </p>
+    <p> 1 - Iris-Versicolor </p>
+    <p> 2 - Iris-Virginica </p>
+
+        <button type="submit">Predict</button> <br> <br>
+
+        {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+    </form>
+    <br>
+
+    
+  
+</body>
+</html>

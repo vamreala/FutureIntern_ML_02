@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #ead5d5;
+}
+
+p{
+    text-align: center;
+}
+
+button{
+    text-align: center;
+}
+
+input{
+    border-radius: 5px;
+    padding: 10px;
+}
+
+h3{
+    text-align: center;
+}
